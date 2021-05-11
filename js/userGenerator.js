@@ -1,7 +1,13 @@
 //https://randomuser.me/api/?gender=female
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import React, { useEffect, useState } from "react";
+import { Card } from "react-bootstrap";
+import axios from "axios";
+import "./App.css";
 
-
-const User = () => {
+const App = () => {
     const [cardData, setCardData] = useState([]);
     const [visible, setVisible] = useState(5);
 
@@ -39,7 +45,7 @@ const User = () => {
         );
     };
     return (
-        <div className="User">
+        <div className="user">
             <div className="wrapper">
                 <div className="cards">
                     {cardData.slice(0, visible).map(renderCard)}
@@ -47,5 +53,5 @@ const User = () => {
             </div>
             {visible < cardData.length && (<button onClick={loadMore}>Load More</button>)}
         </div>
-    )
-}
+    );
+};
