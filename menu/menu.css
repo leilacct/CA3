@@ -1,0 +1,17 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 400px;
+}
+
+table th {background-color: cadetblue; }
+td.total {background-color: lightgrey; }
+.right {text-align: right; }

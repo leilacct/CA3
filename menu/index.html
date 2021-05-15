@@ -10,17 +10,93 @@
 </head>
 
 <body>
+    <!-- Starters -->
+    <Div class="container">
+        <h1>Menu</h1>
+        <h2>Starters</h2>
+        <input type="checkbox" id='item0' class="starte" value="9.99">Soup of the Day ( 9.99)<br>
+        <p>Special mix of veggies ingredients</p>
+        <input type="checkbox" id='item1' value="19.99">Mezze Board (19.99)<br>
+        <p>Brie Cheese, Red Cheddar, Hummus, Bread Stick wrapped with Parm Ham</p>
+        <input type="checkbox" id='item2' value="27.50">Beer Battered Shirimp (27.50)<br>
+        <p>Made with special beer batter and served with sweet chilli dipping sauce</p>
+    </Div>
+    <!-- Main -->
+    <div class="container">
+        <h2>Main</h2>
+        <input type="checkbox" id='item3' value="45.65">Crisp Chicken Wings (45.65)<br>
+        <p>Spicy or BBQ with blue cheese dip</p>
+        <input type="checkbox" id='item4' value="87.20">Traditional Fish and Chips (87.20)<br>
+        <p>Beer battered cod with tarter sauce with french fries</p>
+        <input type="checkbox" id='item5' value="9.99">Pasta Tagliatelle (9.99)<br>
+        <p>Sauteed mushroom, peas, white wine cream sauce and shaved parmesan cheese</p>
+        <input type="checkbox" id='item6' value="19.99">Rib Eye Steak (19.99)<br>
+        <p>Served with portobello mushroom, aspargus, baked tomato. Choice of garlic butter or peppercorn sauce</p>
+        <input type="checkbox" id='item7' value="27.50">Pan Fried Irish Angus Steak Ciabata (27.50)<br>
+        <p>Served with sauteed onion and peppercorn sauce</p>
+        <input type="checkbox" id='item8' value="45.65">Goat Cheese & Beetroot Salad (45.65)<br>
+        <p>Served on a bed of house salad</p>
+    </Div>
+    <!-- Desserts -->
+    <div class="container">
+        <h2>Desserts</h2>
+        <input type="checkbox" id='item9' value="87.20">Buttermilk panna cotta (87.20)<br>
+        <p>Gelatine, orange gel, thyme & rosemary caramel, white chocolate</p>
+        <input type="checkbox" id='item10' value="45.65">Bailey's Cheesecake (45.65)<br>
+        <p>Made with white chocolate and served with ice cream</p>
+        <input type="checkbox" id='item11' value="87.20">Warm Chocolate Brownie (87.20)<br>
+        <p>Served with vanilla ice cream</p>
+    </div>
+    <!-- Drinks -->
+    <div class="container">
+        <h2>Drinks</h2>
+        <input type="checkbox" id='item12' value="45.65">Soft Drinks (45.65)<br>
+        <p>Fanta, Coca-Cola, Sprite</p>
+        <input type="checkbox" id='item13' value="87.20">Juices (87.20)<br>
+        <p>Orange, Apple, Cranberry, Pineapple</p>
+        <input type="checkbox" id='item14' value="45.65">Cocktails (45.65)<br>
+        <p>Mojito, Esspresso Martini, Strawberry Daiquiri, Aperol Spritz</p>
+        <input type="checkbox" id='item15' value="87.20">Wines (87.20)<br>
+        <p>Red wine, White wine, Sparkling wine</p>
+        <textarea name="" id="totalcost" cols="30" rows="5">Total Cost</textarea>
+    </Div>
 
-    <input type="checkbox" id='item0' value="9.99">Item 1 ( 9.99)<br>
-    <input type="checkbox" id='item1' value="19.99">Item 2 (19.99)<br>
-    <input type="checkbox" id='item2' value="27.50">Item 3 (27.50)<br>
-    <input type="checkbox" id='item3' value="45.65">Item 4 (45.65)<br>
-    <input type="checkbox" id='item4' value="87.20">Item 5 (87.20)<br>
-    <textarea name="" id="totalcost" cols="30" rows="5"></textarea>
 
-    <!-- Render menu -->
-    <ul id="menu"></ul>
-
+<!-- Table Menu -->
+<table>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    <tr>
+        <td>Chicken fingers</td>
+        <td>
+            <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="100"/></td>
+        <td>€100</td>
+    </tr>
+    <tr>
+        <td>Item B</td>
+        <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="50"/></td>
+        <td>€50</td>
+    </tr>
+    <tr>
+        <td>Item C</td>
+        <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="30"/></td>
+        <td>€30</td>
+    </tr>
+    <tr>
+        <td>Item D</td>
+        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+        <td>€24</td>
+    </tr>
+    <tr>
+        <td class="total">&nbsp;</td>
+        <td class="total right"><strong>Total:</strong></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0</div>
+            </strong></td>
+    </tr>
+</table>
 
 </body>
 

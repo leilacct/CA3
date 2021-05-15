@@ -1,0 +1,27 @@
+.profile-out {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+.profile-in {
+  width: 93%;
+  margin: 0 auto;
+  background: #79bdce;
+  color: white;
+  padding: 15px 0;
+}
+
+.profile {
+  width: 93%;
+  margin: 0 auto;
+}
+.user-photo {
+  width: 125px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.user-photo img {
+  border-radius: 50%;
+  border: 3px solid #47dbe0;
+}

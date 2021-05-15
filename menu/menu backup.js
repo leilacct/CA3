@@ -1,31 +1,7 @@
-
-// Menu code
-var total_items = 4;
-
-function CalculateItemsValue(){
-    var total = 0;
-
-    for (let i = 1; i <= total_items; i++) {
-       itemID =document.getElementById("qnt_" + i);
-       total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
-        
-    }
-    document.getElementById('ItemsTotal').innerHTML = "€" + total;
-}
-
-document.querySelectorAll('[id^="qnt_"]').forEach(item => {
-    item.addEventListener('keyup', CalculateItemsValue);
-});
-
-
-
-
-// console.log('test');
-// //UpdateCost function with EventListener
 // function UpdateCost() {
 //     var sum = 0;
 //     var item, el;
-//     for (i = 0; i < 16; i++) {
+//     for (i = 0; i < 5; i++) {
 //         item = 'item' + i;
 //         el = document.getElementById(item);
 //         if (el.checked == true) {
@@ -33,25 +9,40 @@ document.querySelectorAll('[id^="qnt_"]').forEach(item => {
 //         }
 //     }
 //     document.getElementById('totalcost').value = sum.toFixed(2);
-// }
+//}
 
-// document.querySelectorAll('[id^="item"]').forEach(item => {
-//     item.addEventListener('click', UpdateCost);
-// });
+console.log('test');
+//UpdateCost function with EventListener
+function UpdateCost() {
+    var sum = 0;
+    var item, el;
+    for (i = 0; i < 16; i++) {
+        item = 'item' + i;
+        el = document.getElementById(item);
+        if (el.checked == true) {
+            sum += Number(el.value);
+        }
+    }
+    document.getElementById('totalcost').value = sum.toFixed(2);
+}
+
+document.querySelectorAll('[id^="item"]').forEach(item => {
+    item.addEventListener('click', UpdateCost);
+});
 
 
-// function filterMenu(menu) {
-//     const menuNode = document.querySelector("#menu");
-//     const vegetarianOptions = menu.filter(
-//         (option) => option.isVegetarian === true
-//     );
+function filterMenu(menu) {
+    const menuNode = document.querySelector("#menu");
+    const vegetarianOptions = menu.filter(
+        (option) => option.isVegetarian === true
+    );
 
-//     vegetarianOptions.forEach((option) => {
-//         let dish = document.createElement("li");
-//         dish.textContent = option.name + " price: " + option.price.toFixed(2);
-//         menuNode.appendChild(dish);
-//     });
-// }
+    vegetarianOptions.forEach((option) => {
+        let dish = document.createElement("li");
+        dish.textContent = option.name + " price: " + option.price.toFixed(2);
+        menuNode.appendChild(dish);
+    });
+}
 
 /*
 function filterMenu(menu) {
