@@ -12,6 +12,6 @@ table {
     width: 400px;
 }
 
-table th {background-color: cadetblue; }
+table th {background-color: rgb(130, 122, 170); }
 td.total {background-color: lightgrey; }
 .right {text-align: right; }
